@@ -26,7 +26,7 @@ font-0 = Inter-Regular:size=11;2
 ;tray-maxsize = 24
 modules-left = curwin
 modules-center = time date
-modules-right = 
+modules-right = switchwm
 
 [module/time]
 type = internal/date
@@ -48,8 +48,8 @@ interval = 0
 
 [module/switchwm]
 type = custom/script
-exec = ~/Git/switchwm/switchwm.sh
-interval = 5
+exec = echo "%{F#ffffff}Switch Layout"
+click-left = ~/Git/polarde/Scripts/switch.sh
 
 [settings]
 screenchange-reload = true
