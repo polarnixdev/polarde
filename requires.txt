@@ -1,0 +1,15 @@
+#
+# A rough list of required packages and scripts
+#
+
+- xorg
+- metacity
+- herbstlufwm
+- picom
+- xfce4-panel
+- polybar
+- rofi
+- sxhkd
+- nautilus
+- Equilux
+- xxxwindow script
