@@ -1,0 +1,59 @@
+[colors]
+background = #dd323232
+foreground = #f8f8f2
+primary = #ffb86c
+secondary = ff5555
+
+[bar/topbar]
+monitor = ${env:MONITOR:DP-4}
+width = 100%
+height = 36
+radius = 0.0
+fixed-center = true
+background = ${colors.background}
+foreground = ${colors.foreground}
+line-size = 0
+line-color = #f00
+border-size = 0
+border-bottom-size = 1
+border-bottom-color = #dd222222
+padding-left = 5
+padding-right = 5
+module-margin-left = 1
+module-margin-right = 2
+font-0 = Inter-Regular:size=11;2
+;tray-position = right
+;tray-maxsize = 24
+modules-left = curwin
+modules-center = time date
+modules-right = 
+
+[module/time]
+type = internal/date
+interval = 5
+time = %H:%M
+label = %time%
+label-foreground = ${colors.foreground}
+
+[module/date]
+type = internal/date
+interval = 5
+date = "%A %m/%d/%Y"
+label = %date%
+
+[module/curwin]
+type = custom/script
+exec = ~/Git/xxxwindow/xxxwindow.sh
+interval = 0
+
+[module/switchwm]
+type = custom/script
+exec = ~/Git/switchwm/switchwm.sh
+interval = 5
+
+[settings]
+screenchange-reload = true
+
+[global/wm]
+margin-top = 5
+margin-bottom = 0

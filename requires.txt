@@ -13,3 +13,4 @@
 - nautilus
 - Equilux
 - xxxwindow script
+- nitrogen

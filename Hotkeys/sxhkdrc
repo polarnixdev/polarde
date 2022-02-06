@@ -1,0 +1,11 @@
+# open a terminal
+super + Return
+	gnome-terminal
+
+# open a launcher
+alt + l
+	rofi -show run -show-icons
+
+# reload sxhkd config
+super + Escape
+	pkill -USR1 -x sxhkd

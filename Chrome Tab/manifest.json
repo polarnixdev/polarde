@@ -1,0 +1,18 @@
+{
+  "name": "Blank new tab page",
+  "description": "Override the new tab page with a blank one",
+  "version": "0.2",
+  "incognito": "split",
+  "permissions": [],
+  "optional_permissions": [],
+  "icons": {
+    "16": "images/new_tab_16.png",
+    "32": "images/new_tab_32.png",
+    "48": "images/new_tab_48.png",
+    "128": "images/new_tab_128.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "manifest_version": 2
+}
