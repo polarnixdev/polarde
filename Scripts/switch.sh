@@ -30,11 +30,8 @@ CURRENT_WM=$(checkWindowManager)
 if [ $CURRENT_WM == 'Metacity' ]; then
 
   # quit metacity
-  echo "Quitting Metacity..."
   killall metacity
-
-  # start picom for tiling wm
-  # picom 2> /dev/null & disown picom
+  echo "%{F#ffffff}Tiling%{u-}"
 
   # quit & start browser for window decorations
   killall chrome
@@ -43,8 +40,8 @@ if [ $CURRENT_WM == 'Metacity' ]; then
 elif [ $CURRENT_WM == 'herbstluftwm' ]; then
 
   # quit herbstluftwm
-  echo "Quitting herbstluftwm"
   killall herbstluftwm
+  echo "%{F#ffffff}Floating%{u-}"
 
   # quit & start browser for window decorations
   killall chrome
